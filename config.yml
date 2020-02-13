@@ -3,6 +3,7 @@ description: a test class.
 template:
   repo: myfirstclass-template
   name: myfirstclass
+  description: class repo
 before:
   - type: createIssue
     title: Welcome!
