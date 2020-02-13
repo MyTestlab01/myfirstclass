@@ -1,0 +1,16 @@
+title: myfirstclass
+description: a test class.
+template:
+  repo: myfirstclass-template
+  name: myfirstclass
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
